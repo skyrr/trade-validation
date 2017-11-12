@@ -1,0 +1,70 @@
+{
+	"$schema": "http:/json-schema.org/draft-04/schema#",
+	"title": "Trade Request for validation.",
+	"type": "object",
+	"properties": {
+		"customer": {
+			"type": "string"
+		},
+		"ccyPair": {
+		    "type": "string"
+		},
+		"type": {
+		    "type": "string"
+		},
+		"style": {
+		    "type": "string"
+		},
+		"direction": {
+		    "type": "string"
+		},
+		"strategy": {
+		    "type": "string"
+		},
+		"tradeDate": {
+		    "$ref": "date.json"
+		},
+		"amount1" : {
+		    "type": "number"
+		},
+		"amount2" : {
+		    "type": "number"
+		},
+		"rate":{
+		    "type": "number"
+		},
+		"valueDate" : {
+		    "$ref": "date.json"
+		},
+		"deliveryDate" : {
+		    "$ref": "date.json"
+		},
+		"expiryDate" : {
+		    "$ref": "date.json"
+		},
+		"excerciseStartDate" : {
+		    "$ref": "date.json"
+		},
+		"payCcy" : {
+		    "type": "string" 
+		},
+		"premium" : {
+		    "type": "number"
+		},
+		"premiumCcy" : {
+		    "type": "string"
+		},
+		"premiumType" : {
+		   	"type": "string"
+		},
+		"premiumDate" : {
+		    "$ref": "date.json"
+		},
+		"legalEntity" : {
+		    "type": "string"
+		},
+		"trader" : {
+		   	"type": "string"
+		}
+	}
+}
